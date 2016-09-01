@@ -29,27 +29,27 @@ SLIDER_IMAGE_LIST = [
         'image':'assets/images/slider/slider_0.jpg',
         'title':'¡APLICACIONES ABIERTAS!',
         'subtitle':'<p>Incríbete para la primera cohorte de Profesionales de Enseña por Panamá.<div style="margin-top: -13px;" class="callout-actions"><a href="/aplica/" class="button red callbox" style="width: 50%;">¡Aplica Ya!</a></div>',
-        'type':'2'       
+        'type':'2'
     },{
         'image':'assets/images/slider/Drobis_01.JPG',
         'title':'Puedes hacerlo realidad',
         'subtitle':'<p>¡Aplica al <b>programa de liderazgo!</b> Tú eres parte del cambio y puedes ayudar a lograr una educación de calidad a todos los niños y jovenes en Panamá</p>',
-        'type':'1'   
+        'type':'1'
     },{
         'image':'assets/images/slider/Drobis_02.JPG',
         'title':'Red TEACH FOR ALL',
         'subtitle':'<p>En países de todo el mundo, el lugar donde nacen los niños determina el tipo de educación que recibirán y, finalmente en el largo plazo, sus opciones en la vida.</p>',
-        'type':'1'   
+        'type':'1'
     },{
         'image':'assets/images/slider/Drobis_03.JPG',
         'title':'El objetivo de Enseña por Panamá',
         'subtitle':'<p>Un día todos los niños, las niñas y jóvenes de Panamá tendrán la oportunidad de recibir una educación de excelencia</p>',
-        'type':'1'   
+        'type':'1'
     },{
         'image':'assets/images/slider/Drobis_05.JPG',
         'title':'Tú puedes ayudar a cambiarlo',
         'subtitle':'<p>¿Sabías que el 80% de los estudiantes de tercer grado no saben leer? Unete y se parte del cambio!</p>',
-        'type':'1'   
+        'type':'1'
     }
 ]
 
@@ -63,8 +63,8 @@ def preBuildPage(site, page, context, data):
     context['header_background'] = HEADER_BACKGROUND
     context['header_links'] = PAGE_LINKS
     context['footer_links'] = [
-        PAGE_LINKS[:len(PAGE_LINKS)/2],
-        PAGE_LINKS[len(PAGE_LINKS)/2:],
+        PAGE_LINKS[:PAGE_LINKS.__len__()],
+        PAGE_LINKS[PAGE_LINKS.__len__()/:],
     ]
     context['slider_image_list'] = SLIDER_IMAGE_LIST
     context['social_links'] = SOCIAL_LINKS
