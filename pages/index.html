@@ -58,12 +58,12 @@ description: Enseña por Panamá es una asociación civil sin fines de lucro que
 
 							<div class="columns large-7 ">
 								<section class="section-upcoming-event p-0">
-                                    
+
                                     <br>
 									<span> <a href="#"><i class="fa fa-video-camera"></i>&nbsp;&nbsp;Presentación Enseña por Panamá</a> | <a href="https://www.youtube.com/channel/UCnLPZ2mm-LJThGNJAcimfWA" target="_blank"><i class="fa fa-youtube-square"></i>&nbsp;&nbsp;Ver Todos los Videos</a></span>
 									<!--<img src="{% static 'assets/images/video2.jpg' %}">-->
                                     <iframe width="853" height="480" src="https://www.youtube.com/embed/Krs687DPKS4?rel=0" frameborder="0" allowfullscreen></iframe>
-                       
+
 								</section>
 							</div><!-- /.columns large-6 -->
 						</div><!-- /.row -->
@@ -107,46 +107,7 @@ description: Enseña por Panamá es una asociación civil sin fines de lucro que
 				</div>
 
 				<div class="row">
-					<div class="slider-clip">
-						<ul class="slides owl-carousel">
-
-							<li class="slide">
-								<div class="slide-entry">
-
-									<div class="columns large-4">
-										<img src="{% static 'assets/images/testimonio1.jpg' %}" alt="testimonial">
-									</div>
-									<div class="columns large-7">
-										<p><strong>Perú</strong> - <a href="http://www.ensenaperu.org" target="_blank">Enseña por Perú</a></p>
-										<p>
-											Hoy fue el primer día de clases; para mí, el primer día de clases más esperado de toda la vida. Primer día en la escuela de San Lorenzo Alto, primer día de ver sus rostros, primer día de escucharlos decir decenas de veces "profesora", primer día de recibir sus sorpresas y cariño... Sentido de posibilidad y amor al 1000% #EsPosible.
-											<b>#enseñaperú</b>
-										</p>
-										<div class="slide-foot">
-                      <p><strong>ESTEFANÍA WELSCH</strong><br><span class="small">Administradora -ULima<br>PEP 2014 - Cajamarca, Perú</span></p>
-										</div>
-									</div>
-
-								</div><!-- /.slide-foot -->
-							</li><!-- /.slide -->
-
-							<li class="slide">
-								<div class="slide-entry">
-									<div class="columns large-7">
-										<p><strong>España</strong> - <a href="http://programaexe.org" target="_blank">Empieza por Educar</a></p>
-										<p>“Siempre decimos que la desigualdad educativa es un problema de múltiples aristas. Yo he encontrado mi arista: la educación online”.</p>
-										<div class="slide-foot">
-                      <p><strong>Quim Sabrià</strong><br><span class="small"> España</span></p>
-										</div>
-									</div>
-									<div class="columns large-4">
-										<img src="{% static 'assets/images/testimonio2.png' %}" alt="testimonial">
-									</div>
-								</div><!-- /.slide-foot -->
-							</li><!-- /.slide -->
-
-						</ul><!-- /.slides -->
-					</div><!-- /.slider-clip -->
+					{% include "index/testimonials.html" %}
 				</div><!-- /.row -->
 			</div><!-- /.slider-testimonials -->
 		</div><!-- /.section-body -->

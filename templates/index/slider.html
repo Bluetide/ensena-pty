@@ -17,13 +17,13 @@
 									{# Only render this block if the slider_image has a subtitle. #}
 									{% if slider_image.subtitle and slider_image.subtitle.strip %}
 	  								<div class="slide-entry">
-	  								     {{ slider_image.subtitle|safe }}	
+	  								     {{ slider_image.subtitle|safe }}
 	  								</div><!-- /.slide-entry -->
 									{% endif %}
-                                    
-                             
+
+
   							</div><!-- /.columns large-7 -->
-                                   
+
   							<div class="columns large-5">
                                 {% if slider_image.type == '1' %}
   								<div class="slide-aside">
@@ -49,18 +49,18 @@
   									<div class="slide-progress">
   										<div class="slide-raised rojoAlt" style="padding-top: 35px;"><a class="slider-link" href="{% url '/alumni.html' %}">
   											<span>Estudiantes</span>
-  											<strong>2.340</strong>
+  											<strong>1080</strong>
                                             <strong>Ver Alumni</strong>
                                             </a></div><!-- /.slide-raised -->
 
   										<div class="slide-to-go rojo" style="padding-top: 35px;"><a class="slider-link" href="{% url '/programa/quien_buscamos.html' %}">
   											<span>Profesores de E×P</span>
-  											<strong>26</strong>
+  											<strong>12</strong>
                                             <strong>Ver Programa</strong>
   										</a></div><!-- /.slide-to-go -->
   									</div><!-- /.slide-progress -->
   								</div><!-- /.slide-aside -->
-             
+
                                 {% endif %}
   							</div><!-- /.columns large-5 -->
   						</div><!-- /.row -->

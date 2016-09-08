@@ -1,0 +1,20 @@
+<div class="slider-clip">
+	<ul class="slides owl-carousel">
+		{% for testimonial_item in testimonials  %}
+				<li class="slide">
+					<div class="slide-entry">
+						<div class="columns large-12">
+							<p>{{ testimonial_item.text }}</p>
+							<div class="slide-foot">
+								<p>
+									<strong>{{ testimonial_item.name }}</strong>
+									<br>
+									<span class="small">{{ testimonial_item.title }}</span>
+								</p>
+							</div>
+						</div>
+					</div><!-- /.slide-foot -->
+				</li><!-- /.slide -->
+		{% endfor %}
+	</ul><!-- /.slides -->
+</div><!-- /.slider-clip -->

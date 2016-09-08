@@ -28,7 +28,7 @@ SLIDER_IMAGE_LIST = [
     {
         'image':'assets/images/slider/slider_0.jpg',
         'title':'¡APLICACIONES ABIERTAS!',
-        'subtitle':'<p>Incríbete para la primera cohorte de Profesionales de Enseña por Panamá.<div style="margin-top: -13px;" class="callout-actions"><a href="/aplica/" class="button red callbox" style="width: 50%;">¡Aplica Ya!</a></div>',
+        'subtitle':'<p>Inscríbete para la segunda cohorte de Profesionales de Enseña por Panamá. Aplicaciones abiertas hasta el 30 de septiembre.<div style="margin-top: -13px;" class="callout-actions"><a href="/aplica/" class="button red callbox" style="width: 50%;">¡Aplica Ya!</a></div>',
         'type':'2'
     },{
         'image':'assets/images/slider/Drobis_01.JPG',
@@ -53,6 +53,24 @@ SLIDER_IMAGE_LIST = [
     }
 ]
 
+TESTIMONIALS = [
+    {
+        "name": "Gerardo Robinson",
+        "title": "Primer Cohorte",
+        "text": "Yo tenía de dos o tres años de meditación con mi carrera. No me gustaba mi profesión, ni en lo que estaba trabajando. Quise experimentar en pedagogía. Después de tres meses estoy Complementamente convencido que lo quiero hacer el resto de mi vida."
+    },{
+        "name":"Alcira",
+        "title": "Primer Cohorte",
+        "text": "Cuando aplique a enseña por panamá,  nunca  imagine todo lo realmente hermoso que sería. Es que de veras se crece en empatía, liderazgo, sencillez, alegría, humildad y perseverancia."
+    },{
+        "name": "Julio Escobar",
+        "text": "Mejores docentes significan mejores alumnos. Creo que los PEPs contagiarán su entorno e irán revelando posibilidades que pocos visualizan."
+    },{
+        "name": "Jorge Vallarino",
+        "text": "Lo más significativo que tiene EP es que estamos invirtiendo directamente en experiencias y enseñanza a nuestros jóvenes y PEPs.  Esta inversión, a diferencia de inversiones en temas físicos (que también son muy necesarias) dura para toda la vida y nunca se pierde"
+    }
+]
+
 HEADER_BACKGROUND = "assets/images/header-bg.jpg"
 
 CONTACT_EMAIL = "info@ensenaporpanama.com"
@@ -62,15 +80,12 @@ CONTACT_ADDRESS = "Edif. 909, Calle 74 con Calle 50, San Francisco"
 def preBuildPage(site, page, context, data):
     context['header_background'] = HEADER_BACKGROUND
     context['header_links'] = PAGE_LINKS
-    context['footer_links'] = [
-        PAGE_LINKS[:PAGE_LINKS.__len__()],
-        PAGE_LINKS[PAGE_LINKS.__len__()/:],
-    ]
     context['slider_image_list'] = SLIDER_IMAGE_LIST
     context['social_links'] = SOCIAL_LINKS
     context['contact_email'] = CONTACT_EMAIL
     context['contact_phone'] = CONTACT_PHONE
     context['contact_address'] = CONTACT_ADDRESS
+    context['testimonials'] = TESTIMONIALS
     context['contact_email_link'] = "mailto:" + CONTACT_EMAIL
     context['contact_phone_link'] = "tel:" + CONTACT_PHONE.replace(" ", "")
     return context, data
