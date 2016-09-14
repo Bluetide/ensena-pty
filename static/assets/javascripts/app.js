@@ -94,7 +94,7 @@
 			loop: true,
 			dots: true,
 			autoplay: true,
-			autoplayTimeout: 5000,
+			autoplayTimeout: 10000,
 			smartSpeed: 500,
 			items: 1
 		});
