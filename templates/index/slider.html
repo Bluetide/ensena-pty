@@ -10,60 +10,6 @@
   					</div><!-- /.slide-image -->
 
   					<div class="slide-content">
-  						<div class="row">
-  							<div class="columns large-7">
-									<h2 class="slide-title">{{ slider_image.title }}</h2><!-- /.slide-title -->
-
-									{# Only render this block if the slider_image has a subtitle. #}
-									{% if slider_image.subtitle and slider_image.subtitle.strip %}
-	  								<div class="slide-entry">
-	  								     {{ slider_image.subtitle|safe }}
-	  								</div><!-- /.slide-entry -->
-									{% endif %}
-
-
-  							</div><!-- /.columns large-7 -->
-
-  							<div class="columns large-5">
-                                {% if slider_image.type == '1' %}
-  								<div class="slide-aside">
-
-  									<div class="slide-progress">
-  										<div class="slide-raised rojoAlt"><a class="slider-link" href="{% url '/desafio.html' %}">
-  											<span>Estudiantes</span>
-
-  											<strong>Ver Desafío</strong>
-                                            </a></div><!-- /.slide-raised -->
-
-  										<div class="slide-to-go rojo"><a class="slider-link" href="{% url '/programa/quien_buscamos.html' %}">
-  											<span>Profesores de E×P</span>
-
-  											<strong>Ver Programa</strong>
-  										</a></div><!-- /.slide-to-go -->
-  									</div><!-- /.slide-progress -->
-  								</div><!-- /.slide-aside -->
-                                {% endif %}
-                                {% if slider_image.type == '2' %}
-                                <div class="slide-aside">
-
-  									<div class="slide-progress">
-  										<div class="slide-raised rojoAlt" style="padding-top: 35px;"><a class="slider-link" href="{% url '/alumni.html' %}">
-  											<span>Estudiantes</span>
-  											<strong>1080</strong>
-                                            <strong>Ver Alumni</strong>
-                                            </a></div><!-- /.slide-raised -->
-
-  										<div class="slide-to-go rojo" style="padding-top: 35px;"><a class="slider-link" href="{% url '/programa/quien_buscamos.html' %}">
-  											<span>Profesores de E×P</span>
-  											<strong>12</strong>
-                                            <strong>Ver Programa</strong>
-  										</a></div><!-- /.slide-to-go -->
-  									</div><!-- /.slide-progress -->
-  								</div><!-- /.slide-aside -->
-
-                                {% endif %}
-  							</div><!-- /.columns large-5 -->
-  						</div><!-- /.row -->
   					</div><!-- /.slide-content -->
   				</li><!-- /.slide -->
         {% endfor %}
