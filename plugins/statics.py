@@ -26,7 +26,7 @@ SOCIAL_LINKS = [
 # Each slider imgae has a url and a title. Subtitle is optional.
 SLIDER_IMAGE_LIST = [
     {
-        'image':'assets/images/slider/slider_2016_01.jpg',
+        'image':'assets/images/slider/slider_0.jpg',
         'title':'¡APLICACIONES ABIERTAS!',
         'subtitle':'<p>Inscríbete para la segunda cohorte de Profesionales de Enseña por Panamá. Aplicaciones abiertas hasta el 30 de septiembre.<div style="margin-top: -13px;" class="callout-actions"><a href="/aplica/" class="button red callbox" style="width: 50%;">¡Aplica Ya!</a></div>',
         'type':'2'
@@ -34,17 +34,17 @@ SLIDER_IMAGE_LIST = [
         'image':'assets/images/slider/slider_2016_02.jpg',
         'title':'Puedes hacerlo realidad',
         'subtitle':'<p>¡Aplica al <b>programa de liderazgo!</b> Tú eres parte del cambio y puedes ayudar a lograr una educación de calidad a todos los niños y jovenes en Panamá</p>',
-        'type':'1'
+        'type':'3'
     },{
         'image':'assets/images/slider/slider_2016_03.jpg',
         'title':'Red TEACH FOR ALL',
         'subtitle':'<p>En países de todo el mundo, el lugar donde nacen los niños determina el tipo de educación que recibirán y, finalmente en el largo plazo, sus opciones en la vida.</p>',
-        'type':'1'
+        'type':'3'
     },{
         'image':'assets/images/slider/slider_2016_04.jpg',
         'title':'El objetivo de Enseña por Panamá',
         'subtitle':'<p>Un día todos los niños, las niñas y jóvenes de Panamá tendrán la oportunidad de recibir una educación de excelencia</p>',
-        'type':'1'
+        'type':'3'
     },
 ]
 

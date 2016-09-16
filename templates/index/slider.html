@@ -5,12 +5,42 @@
         {# defined in plugins/statics.py #}
         {% for slider_image in slider_image_list %}
           <li class="slide">
+						<a href="{% url '/aplica.html'%}">
   					<div class="slide-image fullscreener">
-  						<img src="{% static slider_image.image %}" height="890" width="1800" alt="">
+  							<img src="{% static slider_image.image %}" height="890" width="1800" alt="">
   					</div><!-- /.slide-image -->
+					</a>
 
+					{# If slide is 'type 3', do not print the text #}
+					{% if not slider_image.type == '3' %}
   					<div class="slide-content">
+								<div class="row">
+									<div class="columns large-7">
+										<h2 class="slide-title">{{ slider_image.title }}</h2><!-- /.slide-title -->
+
+										{# Only render this block if the slider_image has a subtitle. #}
+										{% if slider_image.subtitle and slider_image.subtitle.strip %}
+											<div class="slide-entry">
+												{{ slider_image.subtitle|safe }}
+											</div><!-- /.slide-entry -->
+										{% endif %}
+
+									</div><!-- /.columns large-7 -->
+
+									<div class="columns large-5">
+										{% if slider_image.type == '1' %}
+											{% include "index/slide_type_1.html" %}
+										{% endif %}
+										{% if slider_image.type == '2' %}
+											{% include "index/slide_type_2.html" %}
+										{% endif %}
+									</div><!-- /.columns large-5 -->
+
+								</div><!-- /.row -->
+
   					</div><!-- /.slide-content -->
+					{% endif %}
+
   				</li><!-- /.slide -->
         {% endfor %}
 
