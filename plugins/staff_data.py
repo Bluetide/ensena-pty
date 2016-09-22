@@ -58,7 +58,11 @@ STAFF_DATA = [
         'name': 'Yuri Pittí',
         'photo': 'assets/images/staff/yuri_pitti.jpg',
         'tagline': 'Asistente Técnica',
-    },
+    },{
+        'name': 'Dalys Rodríguez',
+        'photo': 'assets/images/staff/dalys_rodriguez.jpg',
+        'tagline': 'Directora de Desarrollo'
+    }
 ]
 
 # Adds extra attributes programatically to the staff items.
