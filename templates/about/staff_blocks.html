@@ -4,7 +4,7 @@
   {% for staff_item in staff_data %}
     <li class="{% cycle 'staff-item' 'staff-item' 'staff-item staff-item-alt' 'staff-item staff-item-alt' %}">
       <div class="staff-item-image">
-        <a href="#{{ staff_item.link }}">
+        <a href="#{{ staff_item.name | slugify }}">
           <img src="{% static staff_item.photo %}"
             height="248" width="285"
             alt="{{ staff_item.name }}"
@@ -20,7 +20,7 @@
           <div class="staff-item-actions">
             <ul>
               <li>
-                <a href="#{{ staff_item.link }}">
+                <a href="#{{ staff_item.name | slugify }}">
                   <i class="fa fa-user"></i>
                   &nbsp;
                   <span class="perfil">Ver Perfil</span>
