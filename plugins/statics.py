@@ -40,12 +40,7 @@ SLIDER_IMAGE_LIST = [
         'title':'Red TEACH FOR ALL',
         'subtitle':'<p>En países de todo el mundo, el lugar donde nacen los niños determina el tipo de educación que recibirán y, finalmente en el largo plazo, sus opciones en la vida.</p>',
         'type':'3'
-    },{
-        'image':'assets/images/slider/slider_2016_04.jpg',
-        'title':'El objetivo de Enseña por Panamá',
-        'subtitle':'<p>Un día todos los niños, las niñas y jóvenes de Panamá tendrán la oportunidad de recibir una educación de excelencia</p>',
-        'type':'3'
-    },
+    }
 ]
 
 TESTIMONIALS = [
